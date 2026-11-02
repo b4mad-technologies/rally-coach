@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "source": "authored",
+  "generatedAt": "2026-11-02T07:30:49.535Z",
+  "sourceHashes": {
+    "apps/web/tests/web_activity.rs": "a98aa1e0acf93a2b94b935007ffafab1d0e691b619e5d72c1ead4d77447ad9c0",
+    "apps/web/tests/web_driven.rs": "d300474bd5951923eb6973810603f2499fa37fb0efcaae40562027ab48e2a20f",
+    "apps/web/tests/support/linked.rs": "d69a6ddbcb753323e1031533e7e7b1f805c169677476875deb226669ce452979",
+    "apps/desktop/src/app.css": "ae62b215c26cef023b0f88186d1a6e8b6952fe58715bd7d028739e46fc9d22af"
+  },
+  "records": [
+    {
+      "step": 2,
+      "language": "en",
+      "driver": "web_activity",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "en-2.png",
+      "sha256": "fc75a682cc105ce0783514246a3ad38462b878112062b3bfde041f5ff0da9a5f"
+    },
+    {
+      "step": 2,
+      "language": "de",
+      "driver": "web_activity",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "de-2.png",
+      "sha256": "e885e4b323088eadf5851843cf659c37bf29b414a00880f7fad6dd9404564348"
+    },
+    {
+      "step": 1,
+      "language": "en",
+      "driver": "web_activity",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "en-1.png",
+      "sha256": "009f53e73cba627c6f1fa75b9759329c5bf22e88da20d14de83aee7f05c82dae"
+    },
+    {
+      "step": 1,
+      "language": "de",
+      "driver": "web_activity",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "de-1.png",
+      "sha256": "777aba006144154c2b56b37d86f0afe9a0088099dcdebcc82b4fae1e84ad9126"
+    },
+    {
+      "step": 3,
+      "language": "en",
+      "driver": "web_activity",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "en-3.png",
+      "sha256": "1c2ad7ef6b409c4da18991ebc16409d4a1d3f7288524499da63dbd527f2285c7"
+    },
+    {
+      "step": 3,
+      "language": "de",
+      "driver": "web_activity",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "de-3.png",
+      "sha256": "343611820844abed44dd9fc8d663d865abbc106be97100298ac95437ed6f9da7"
+    },
+    {
+      "step": 5,
+      "language": "en",
+      "driver": "web_activity",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "en-5.png",
+      "sha256": "680145722c741262577b262c07af45d91c0be15b46ef184ec5eeba2dd9eaa63c"
+    },
+    {
+      "step": 5,
+      "language": "de",
+      "driver": "web_activity",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "de-5.png",
+      "sha256": "f240191923c5cc56b3add237b947799e46dda9b384294756fd02ce822f216553"
+    },
+    {
+      "step": 6,
+      "language": "en",
+      "driver": "web_activity",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "en-6.png",
+      "sha256": "123741bfc8b382eff0d6e7a425804c714e0c3a7449951cfc6fb58ea894fad3e8"
+    },
+    {
+      "step": 6,
+      "language": "de",
+      "driver": "web_activity",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "de-6.png",
+      "sha256": "2c0b157d85a4a8b4832a878216735e4c2225c097a84a60c6e6bd8e3df3ddfeee"
+    },
+    {
+      "step": 4,
+      "language": "en",
+      "driver": "web_driven",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "en-4.png",
+      "sha256": "ac2daa8766cf18060620800a7e8859bf4f4047417be5841cdb561d015b5d9045"
+    },
+    {
+      "step": 4,
+      "language": "de",
+      "driver": "web_driven",
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "file": "de-4.png",
+      "sha256": "cda180c00a7d5e7d6e59baee7e203cfd828a3341645ed9b3bfd77870320fe0a9"
+    }
+  ]
+}
