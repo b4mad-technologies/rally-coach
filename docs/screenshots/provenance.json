@@ -1,169 +1,256 @@
 {
   "schema": 1,
   "source": "authored",
-  "generatedAt": "2026-11-02T07:30:49.535Z",
+  "sourceRevision": "225804c9e2a13a5ab022b5c6ca9441769b4825dc",
+  "generatedAt": "2026-11-02T23:37:28.801Z",
   "sourceHashes": {
-    "apps/web/tests/web_activity.rs": "a98aa1e0acf93a2b94b935007ffafab1d0e691b619e5d72c1ead4d77447ad9c0",
-    "apps/web/tests/web_driven.rs": "d300474bd5951923eb6973810603f2499fa37fb0efcaae40562027ab48e2a20f",
-    "apps/web/tests/support/linked.rs": "d69a6ddbcb753323e1031533e7e7b1f805c169677476875deb226669ce452979",
-    "apps/desktop/src/app.css": "ae62b215c26cef023b0f88186d1a6e8b6952fe58715bd7d028739e46fc9d22af"
+    "apps/web/tests/site_showcase.rs": "6965d4158a0d8dd9f849076bb8def143b26a0e984ca14d719e4f1ef6223e1843",
+    "site/scripts/showcase.py": "26815c3f4f361d550cda271abcdfe1ea4ac25d3f8b1c1303299047d0e35e38a3",
+    "site/scripts/screenshots.mjs": "d4b728430ae75dc02183aa76f5dffd72a873b8da81cc4c7dee6ca5f182fea0ce",
+    "apps/web/tests/support/discovery.rs": "6d5ec37b53255a7c88a9f10b6c571362f237229e3ecafcf65bd9cc8775392133",
+    "crates/metadata/tests/support/racestat.rs": "b25b2a059a2523c2477789c04a07a4837bd93cecdd71de7c5da01919fc4e2488",
+    "fixtures/setups/authored-ranges/r_gravel.lsp": "5ba30bb7dc753cdc1482ec749c09644e870a148838812bae68a066832237dc3a",
+    "apps/desktop/src/app.css": "c52d131a80368c881940356a1f2efbda5da006122194bfc3a1a59d8955bff208",
+    "apps/desktop/src/lib/i18n/home.ts": "901b465c004e2eea760a7e0a4770d061a2650f2cde7b6d8575cccb4d74cf505e",
+    "apps/desktop/src/lib/i18n/library.ts": "cfc77273840f4f1196d3df49cd03f3431e83f562ce8bd019fba36a62f65087dc",
+    "apps/desktop/src/lib/i18n/setups.ts": "efa2f7fd6afdbf0b6e46fd725dc4c4e17e00523e509f62443ab552a097fdbad2",
+    "apps/desktop/src/lib/format/setup.ts": "082c2fb1e6758a007064ee3c953cd5852cb65908936a7f9ab6c0679d1fbe831f",
+    "apps/desktop/src/lib/components/RallyLibrary.svelte": "87eef7d78a220b9c2bee2c798d3bbda41ec6e63195fcd116063e06e9ff843cef",
+    "apps/desktop/src/lib/components/LocalStageMap.svelte": "4cbf65a5125c74f543287676274c66ccea999e6cecc6acdbb6528f6dad16a432",
+    "apps/desktop/src/lib/components/StageDetail.svelte": "c3e34434d0776b82dec436f277fde9ee58df2951a21add030cc3d5b822ffcb03",
+    "apps/desktop/src/lib/components/CarDetail.svelte": "769f7344d1779382891562c3d929bba6aba4765b0a79c46fdb9086c850f990c7",
+    "apps/desktop/src/routes/+page.svelte": "4b1b76111f654ff9525d00ccc1a6ad63b1e8c70bb6f8be8c9c79cc98f8ca9ae1",
+    "apps/desktop/src/routes/runs/[id]/telemetry/+page.svelte": "f30ef4736ec3c3fccba508610f37dfc799d29af3864ad94d108e06876b3f1e25",
+    "apps/desktop/src/routes/setups/+page.svelte": "fcfd434b4ba52e3f04796e122431a66644c57290097f9884931de4a27b2d237a"
   },
   "records": [
     {
-      "step": 2,
-      "language": "en",
-      "driver": "web_activity",
-      "source": "authored",
-      "imagery": "off",
-      "viewport": {
-        "width": 1280,
-        "height": 800
-      },
-      "file": "en-2.png",
-      "sha256": "fc75a682cc105ce0783514246a3ad38462b878112062b3bfde041f5ff0da9a5f"
-    },
-    {
-      "step": 2,
-      "language": "de",
-      "driver": "web_activity",
-      "source": "authored",
-      "imagery": "off",
-      "viewport": {
-        "width": 1280,
-        "height": 800
-      },
-      "file": "de-2.png",
-      "sha256": "e885e4b323088eadf5851843cf659c37bf29b414a00880f7fad6dd9404564348"
-    },
-    {
       "step": 1,
       "language": "en",
-      "driver": "web_activity",
+      "driver": "site_showcase",
+      "stop": "start",
+      "coaching": false,
       "source": "authored",
       "imagery": "off",
       "viewport": {
-        "width": 1280,
-        "height": 800
+        "width": 1000,
+        "height": 1200
+      },
+      "imageSize": {
+        "width": 1000,
+        "height": 1200
       },
       "file": "en-1.png",
-      "sha256": "009f53e73cba627c6f1fa75b9759329c5bf22e88da20d14de83aee7f05c82dae"
+      "sha256": "0309779c53d74825fb34d39e06a954618ea0af94cd8a6dcb08c0f4325669f10c"
     },
     {
       "step": 1,
       "language": "de",
-      "driver": "web_activity",
+      "driver": "site_showcase",
+      "stop": "start",
+      "coaching": false,
       "source": "authored",
       "imagery": "off",
       "viewport": {
-        "width": 1280,
-        "height": 800
+        "width": 1000,
+        "height": 1200
+      },
+      "imageSize": {
+        "width": 1000,
+        "height": 1200
       },
       "file": "de-1.png",
-      "sha256": "777aba006144154c2b56b37d86f0afe9a0088099dcdebcc82b4fae1e84ad9126"
+      "sha256": "139b5cfe947e77ecc26410bbcd1596912603cf9d5f872312d59919fbe6dc27a7"
+    },
+    {
+      "step": 2,
+      "language": "en",
+      "driver": "site_showcase",
+      "stop": "rally",
+      "coaching": false,
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1000,
+        "height": 1120
+      },
+      "imageSize": {
+        "width": 1000,
+        "height": 1120
+      },
+      "file": "en-2.png",
+      "sha256": "25ac25f73691df05c671edded3488c8e5061540dfe70ae9422cb493c3989bbaa"
+    },
+    {
+      "step": 2,
+      "language": "de",
+      "driver": "site_showcase",
+      "stop": "rally",
+      "coaching": false,
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1000,
+        "height": 1120
+      },
+      "imageSize": {
+        "width": 1000,
+        "height": 1120
+      },
+      "file": "de-2.png",
+      "sha256": "e4a83a8861da58377dc3f04a58b5d079c8b1dae73816e16c0e9250506b841256"
     },
     {
       "step": 3,
       "language": "en",
-      "driver": "web_activity",
+      "driver": "site_showcase",
+      "stop": "map",
+      "coaching": false,
       "source": "authored",
       "imagery": "off",
       "viewport": {
-        "width": 1280,
-        "height": 800
+        "width": 1000,
+        "height": 1000
+      },
+      "imageSize": {
+        "width": 1000,
+        "height": 1038
       },
       "file": "en-3.png",
-      "sha256": "1c2ad7ef6b409c4da18991ebc16409d4a1d3f7288524499da63dbd527f2285c7"
+      "sha256": "3ad6a2c85c13ae5f9237697280ac9c59354021f2c6d6a8653b4eb51f53ea7caa"
     },
     {
       "step": 3,
       "language": "de",
-      "driver": "web_activity",
+      "driver": "site_showcase",
+      "stop": "map",
+      "coaching": false,
       "source": "authored",
       "imagery": "off",
       "viewport": {
-        "width": 1280,
-        "height": 800
+        "width": 1000,
+        "height": 1000
+      },
+      "imageSize": {
+        "width": 1000,
+        "height": 1038
       },
       "file": "de-3.png",
-      "sha256": "343611820844abed44dd9fc8d663d865abbc106be97100298ac95437ed6f9da7"
-    },
-    {
-      "step": 5,
-      "language": "en",
-      "driver": "web_activity",
-      "source": "authored",
-      "imagery": "off",
-      "viewport": {
-        "width": 1280,
-        "height": 800
-      },
-      "file": "en-5.png",
-      "sha256": "680145722c741262577b262c07af45d91c0be15b46ef184ec5eeba2dd9eaa63c"
-    },
-    {
-      "step": 5,
-      "language": "de",
-      "driver": "web_activity",
-      "source": "authored",
-      "imagery": "off",
-      "viewport": {
-        "width": 1280,
-        "height": 800
-      },
-      "file": "de-5.png",
-      "sha256": "f240191923c5cc56b3add237b947799e46dda9b384294756fd02ce822f216553"
-    },
-    {
-      "step": 6,
-      "language": "en",
-      "driver": "web_activity",
-      "source": "authored",
-      "imagery": "off",
-      "viewport": {
-        "width": 1280,
-        "height": 800
-      },
-      "file": "en-6.png",
-      "sha256": "123741bfc8b382eff0d6e7a425804c714e0c3a7449951cfc6fb58ea894fad3e8"
-    },
-    {
-      "step": 6,
-      "language": "de",
-      "driver": "web_activity",
-      "source": "authored",
-      "imagery": "off",
-      "viewport": {
-        "width": 1280,
-        "height": 800
-      },
-      "file": "de-6.png",
-      "sha256": "2c0b157d85a4a8b4832a878216735e4c2225c097a84a60c6e6bd8e3df3ddfeee"
+      "sha256": "e669b9ae7ad6a4f92527d5cbeab99def123a5e56d2b1c50a745b752d2ed0bd8a"
     },
     {
       "step": 4,
       "language": "en",
-      "driver": "web_driven",
+      "driver": "site_showcase",
+      "stop": "telemetry",
+      "coaching": false,
       "source": "authored",
       "imagery": "off",
       "viewport": {
-        "width": 1280,
-        "height": 800
+        "width": 1120,
+        "height": 1000
+      },
+      "imageSize": {
+        "width": 1120,
+        "height": 1000
       },
       "file": "en-4.png",
-      "sha256": "ac2daa8766cf18060620800a7e8859bf4f4047417be5841cdb561d015b5d9045"
+      "sha256": "bce58d7729ee6a3ec872e3ecf465d0b1b4f7637df6c4e20589baa6f72838b7f6"
     },
     {
       "step": 4,
       "language": "de",
-      "driver": "web_driven",
+      "driver": "site_showcase",
+      "stop": "telemetry",
+      "coaching": false,
       "source": "authored",
       "imagery": "off",
       "viewport": {
-        "width": 1280,
-        "height": 800
+        "width": 1120,
+        "height": 1000
+      },
+      "imageSize": {
+        "width": 1120,
+        "height": 1000
       },
       "file": "de-4.png",
-      "sha256": "cda180c00a7d5e7d6e59baee7e203cfd828a3341645ed9b3bfd77870320fe0a9"
+      "sha256": "5c98fe7804f15c692fb50f9ad82f86c1b7adad0719f8a37675ed8062316e9f96"
+    },
+    {
+      "step": 5,
+      "language": "en",
+      "driver": "site_showcase",
+      "stop": "setup",
+      "coaching": false,
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1000,
+        "height": 1400
+      },
+      "imageSize": {
+        "width": 1000,
+        "height": 1400
+      },
+      "file": "en-5.png",
+      "sha256": "c534583ad0c6648822eb48fcfa39c78ea0866900792208194f7d5fa4d7bdb65d"
+    },
+    {
+      "step": 5,
+      "language": "de",
+      "driver": "site_showcase",
+      "stop": "setup",
+      "coaching": false,
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1000,
+        "height": 1400
+      },
+      "imageSize": {
+        "width": 1000,
+        "height": 1400
+      },
+      "file": "de-5.png",
+      "sha256": "6ecf2095d0b200778f459325368e47503523dbf3eb3195a8d05147d7e7733101"
+    },
+    {
+      "step": 6,
+      "language": "en",
+      "driver": "site_showcase",
+      "stop": "car",
+      "coaching": false,
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1000,
+        "height": 1400
+      },
+      "imageSize": {
+        "width": 1000,
+        "height": 1410
+      },
+      "file": "en-6.png",
+      "sha256": "b5a8915eb103d23b75a30938a1df053c7df645fdc298c5346a85389892b2eb6b"
+    },
+    {
+      "step": 6,
+      "language": "de",
+      "driver": "site_showcase",
+      "stop": "car",
+      "coaching": false,
+      "source": "authored",
+      "imagery": "off",
+      "viewport": {
+        "width": 1000,
+        "height": 1400
+      },
+      "imageSize": {
+        "width": 1000,
+        "height": 1410
+      },
+      "file": "de-6.png",
+      "sha256": "8599a8275d29f92fd445a1da4b35c24ed379aa9b2e95fa462c36ab1d1cc180c2"
     }
   ]
 }
