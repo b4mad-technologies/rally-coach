@@ -1,0 +1,54 @@
+{
+  "schema": 3,
+  "id": "runs",
+  "source": "real",
+  "imagery": "configured",
+  "coaching": false,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 2,
+  "hotspots": [
+    {
+      "selector": "input[role=\"combobox\"]",
+      "title": "Find a run",
+      "text": "Search your local driving history.",
+      "box": {
+        "x": 4.305555555555555,
+        "y": 19.11111111111111,
+        "width": 90.27777777777777,
+        "height": 4.194444444444445
+      }
+    },
+    {
+      "selector": "table.runs thead",
+      "title": "Every attempt",
+      "text": "Read stage, car, finish time and recording availability together.",
+      "box": {
+        "x": 3.3333333333333335,
+        "y": 31.56597222222222,
+        "width": 92.22222222222223,
+        "height": 5.291666666666667
+      }
+    }
+  ],
+  "images": {
+    "light": {
+      "file": "runs-light.png",
+      "sha256": "e6f64eb523336ce79073ccecc538348b9a9344e12d962b0e60fceac731259e66",
+      "imageSize": {
+        "width": 2880,
+        "height": 1800
+      }
+    },
+    "dark": {
+      "file": "runs-dark.png",
+      "sha256": "5bbd07a334485469e6a5b1bbe7b977ab70da5dd2a44d72ed99a826c789336cad",
+      "imageSize": {
+        "width": 2880,
+        "height": 1800
+      }
+    }
+  }
+}

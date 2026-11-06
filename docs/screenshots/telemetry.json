@@ -1,0 +1,54 @@
+{
+  "schema": 3,
+  "id": "telemetry",
+  "source": "real",
+  "imagery": "configured",
+  "coaching": false,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 2,
+  "hotspots": [
+    {
+      "selector": "#telemetry-map",
+      "title": "On the stage",
+      "text": "Follow the recorded drive beside the map.",
+      "box": {
+        "x": 0.8333333333333334,
+        "y": 11.397569444444445,
+        "width": 31.465928819444443,
+        "height": 87.71354166666667
+      }
+    },
+    {
+      "selector": "#telemetry-charts",
+      "title": "Recorded channels",
+      "text": "Read speed and pedals on the same distance axis.",
+      "box": {
+        "x": 33.132595486111114,
+        "y": 11.397569444444445,
+        "width": 66.03407118055556,
+        "height": 87.71354166666667
+      }
+    }
+  ],
+  "images": {
+    "light": {
+      "file": "telemetry-light.png",
+      "sha256": "7962c02a6384e4b4b78da996565ca493e4fa757e69c2861195007b05e7444efb",
+      "imageSize": {
+        "width": 2880,
+        "height": 1800
+      }
+    },
+    "dark": {
+      "file": "telemetry-dark.png",
+      "sha256": "abfc0c06467ce9f2492232de87f99569e6067ab88dd76a3476bed72e53165b3b",
+      "imageSize": {
+        "width": 2880,
+        "height": 1800
+      }
+    }
+  }
+}

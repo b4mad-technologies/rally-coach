@@ -1,256 +1,439 @@
 {
-  "schema": 1,
-  "source": "authored",
-  "sourceRevision": "225804c9e2a13a5ab022b5c6ca9441769b4825dc",
-  "generatedAt": "2026-11-02T23:37:28.801Z",
-  "sourceHashes": {
-    "apps/web/tests/site_showcase.rs": "6965d4158a0d8dd9f849076bb8def143b26a0e984ca14d719e4f1ef6223e1843",
-    "site/scripts/showcase.py": "26815c3f4f361d550cda271abcdfe1ea4ac25d3f8b1c1303299047d0e35e38a3",
-    "site/scripts/screenshots.mjs": "d4b728430ae75dc02183aa76f5dffd72a873b8da81cc4c7dee6ca5f182fea0ce",
-    "apps/web/tests/support/discovery.rs": "6d5ec37b53255a7c88a9f10b6c571362f237229e3ecafcf65bd9cc8775392133",
-    "crates/metadata/tests/support/racestat.rs": "b25b2a059a2523c2477789c04a07a4837bd93cecdd71de7c5da01919fc4e2488",
-    "fixtures/setups/authored-ranges/r_gravel.lsp": "5ba30bb7dc753cdc1482ec749c09644e870a148838812bae68a066832237dc3a",
-    "apps/desktop/src/app.css": "c52d131a80368c881940356a1f2efbda5da006122194bfc3a1a59d8955bff208",
-    "apps/desktop/src/lib/i18n/home.ts": "901b465c004e2eea760a7e0a4770d061a2650f2cde7b6d8575cccb4d74cf505e",
-    "apps/desktop/src/lib/i18n/library.ts": "cfc77273840f4f1196d3df49cd03f3431e83f562ce8bd019fba36a62f65087dc",
-    "apps/desktop/src/lib/i18n/setups.ts": "efa2f7fd6afdbf0b6e46fd725dc4c4e17e00523e509f62443ab552a097fdbad2",
-    "apps/desktop/src/lib/format/setup.ts": "082c2fb1e6758a007064ee3c953cd5852cb65908936a7f9ab6c0679d1fbe831f",
-    "apps/desktop/src/lib/components/RallyLibrary.svelte": "87eef7d78a220b9c2bee2c798d3bbda41ec6e63195fcd116063e06e9ff843cef",
-    "apps/desktop/src/lib/components/LocalStageMap.svelte": "4cbf65a5125c74f543287676274c66ccea999e6cecc6acdbb6528f6dad16a432",
-    "apps/desktop/src/lib/components/StageDetail.svelte": "c3e34434d0776b82dec436f277fde9ee58df2951a21add030cc3d5b822ffcb03",
-    "apps/desktop/src/lib/components/CarDetail.svelte": "769f7344d1779382891562c3d929bba6aba4765b0a79c46fdb9086c850f990c7",
-    "apps/desktop/src/routes/+page.svelte": "4b1b76111f654ff9525d00ccc1a6ad63b1e8c70bb6f8be8c9c79cc98f8ca9ae1",
-    "apps/desktop/src/routes/runs/[id]/telemetry/+page.svelte": "f30ef4736ec3c3fccba508610f37dfc799d29af3864ad94d108e06876b3f1e25",
-    "apps/desktop/src/routes/setups/+page.svelte": "fcfd434b4ba52e3f04796e122431a66644c57290097f9884931de4a27b2d237a"
-  },
+  "schema": 3,
+  "source": "real",
+  "approval": "approval.json",
   "records": [
     {
-      "step": 1,
-      "language": "en",
-      "driver": "site_showcase",
-      "stop": "start",
+      "schema": 3,
+      "id": "home",
+      "source": "real",
+      "imagery": "configured",
       "coaching": false,
-      "source": "authored",
-      "imagery": "off",
       "viewport": {
-        "width": 1000,
-        "height": 1200
+        "width": 1440,
+        "height": 900
       },
-      "imageSize": {
-        "width": 1000,
-        "height": 1200
-      },
-      "file": "en-1.png",
-      "sha256": "0309779c53d74825fb34d39e06a954618ea0af94cd8a6dcb08c0f4325669f10c"
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": ".stage-map",
+          "title": "Route and notes",
+          "text": "See the stage route and installed pacenotes together.",
+          "box": {
+            "x": 1.1111111111111112,
+            "y": 10.759652752266971,
+            "width": 72.36111111111111,
+            "height": 87.85599659712689
+          }
+        },
+        {
+          "selector": "[data-personal-notes]",
+          "title": "Your pacenotes",
+          "text": "Inspect the active installed note profile.",
+          "box": {
+            "x": 74.58333333333333,
+            "y": 14.80829837010112,
+            "width": 24.305555555555557,
+            "height": 10.848591481216527
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "home-light.png",
+          "sha256": "9b28220ad82914d46e2818c8499f4ec31b907683ff5f03f87be4c924f1f9ba06",
+          "imageSize": {
+            "width": 2880,
+            "height": 1616
+          }
+        },
+        "dark": {
+          "file": "home-dark.png",
+          "sha256": "94c12aad1485f98c2c32f0c2d0999b515b79f6ba1b60a77ca47aba0e471c5957",
+          "imageSize": {
+            "width": 2880,
+            "height": 1616
+          }
+        }
+      }
     },
     {
-      "step": 1,
-      "language": "de",
-      "driver": "site_showcase",
-      "stop": "start",
+      "schema": 3,
+      "id": "runs",
+      "source": "real",
+      "imagery": "configured",
       "coaching": false,
-      "source": "authored",
-      "imagery": "off",
       "viewport": {
-        "width": 1000,
-        "height": 1200
+        "width": 1440,
+        "height": 900
       },
-      "imageSize": {
-        "width": 1000,
-        "height": 1200
-      },
-      "file": "de-1.png",
-      "sha256": "139b5cfe947e77ecc26410bbcd1596912603cf9d5f872312d59919fbe6dc27a7"
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": "input[role=\"combobox\"]",
+          "title": "Find a run",
+          "text": "Search your local driving history.",
+          "box": {
+            "x": 4.305555555555555,
+            "y": 19.11111111111111,
+            "width": 90.27777777777777,
+            "height": 4.194444444444445
+          }
+        },
+        {
+          "selector": "table.runs thead",
+          "title": "Every attempt",
+          "text": "Read stage, car, finish time and recording availability together.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 31.56597222222222,
+            "width": 92.22222222222223,
+            "height": 5.291666666666667
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "runs-light.png",
+          "sha256": "e6f64eb523336ce79073ccecc538348b9a9344e12d962b0e60fceac731259e66",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        },
+        "dark": {
+          "file": "runs-dark.png",
+          "sha256": "5bbd07a334485469e6a5b1bbe7b977ab70da5dd2a44d72ed99a826c789336cad",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        }
+      }
     },
     {
-      "step": 2,
-      "language": "en",
-      "driver": "site_showcase",
-      "stop": "rally",
+      "schema": 3,
+      "id": "rallies",
+      "source": "real",
+      "imagery": "configured",
       "coaching": false,
-      "source": "authored",
-      "imagery": "off",
       "viewport": {
-        "width": 1000,
-        "height": 1120
+        "width": 1440,
+        "height": 900
       },
-      "imageSize": {
-        "width": 1000,
-        "height": 1120
-      },
-      "file": "en-2.png",
-      "sha256": "25ac25f73691df05c671edded3488c8e5061540dfe70ae9422cb493c3989bbaa"
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": "table.passes thead",
+          "title": "Stage order",
+          "text": "Read the stages and finish times in each pass.",
+          "box": {
+            "x": 13.333333333333334,
+            "y": 24.81077134054035,
+            "width": 73.33333333333333,
+            "height": 5.428413685016652
+          }
+        },
+        {
+          "selector": "[data-rally-pass] [data-rally-run]",
+          "title": "Rally passes",
+          "text": "Keep the runs from each pass together.",
+          "box": {
+            "x": 13.333333333333334,
+            "y": 45.27418119645942,
+            "width": 73.33333333333333,
+            "height": 7.943151258259275
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "rallies-light.png",
+          "sha256": "e4496592f06b88902393e26385d2c4b403472ede3a27a844d0662225c32aad76",
+          "imageSize": {
+            "width": 2880,
+            "height": 1754
+          }
+        },
+        "dark": {
+          "file": "rallies-dark.png",
+          "sha256": "f0a0765ea1970b0a787ad583d7e4c8d289dac8500a266cc1c5903fdfd1d4c79d",
+          "imageSize": {
+            "width": 2880,
+            "height": 1754
+          }
+        }
+      }
     },
     {
-      "step": 2,
-      "language": "de",
-      "driver": "site_showcase",
-      "stop": "rally",
+      "schema": 3,
+      "id": "stages",
+      "source": "real",
+      "imagery": "configured",
       "coaching": false,
-      "source": "authored",
-      "imagery": "off",
       "viewport": {
-        "width": 1000,
-        "height": 1120
+        "width": 1440,
+        "height": 900
       },
-      "imageSize": {
-        "width": 1000,
-        "height": 1120
-      },
-      "file": "de-2.png",
-      "sha256": "e4a83a8861da58377dc3f04a58b5d079c8b1dae73816e16c0e9250506b841256"
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": ".stage-header",
+          "title": "Stage facts",
+          "text": "Read the length and surface from your install.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 5.333333333333333,
+            "width": 61.666666666666664,
+            "height": 11.61111111111111
+          }
+        },
+        {
+          "selector": "[data-car-best]",
+          "title": "Your finishes",
+          "text": "See your recorded best finishes by car.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 31.92534722222222,
+            "width": 61.666666666666664,
+            "height": 5.347222222222222
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "stages-light.png",
+          "sha256": "b202ee8814dd3199770a86fe74995df0c970289294e6926360325958f01bbf68",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        },
+        "dark": {
+          "file": "stages-dark.png",
+          "sha256": "12dcf425334cccefcdeaf7b6355b1ac2d40c44ee2607e20730b607babef76c55",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        }
+      }
     },
     {
-      "step": 3,
-      "language": "en",
-      "driver": "site_showcase",
-      "stop": "map",
+      "schema": 3,
+      "id": "map",
+      "source": "real",
+      "imagery": "configured",
       "coaching": false,
-      "source": "authored",
-      "imagery": "off",
       "viewport": {
-        "width": 1000,
-        "height": 1000
+        "width": 1440,
+        "height": 900
       },
-      "imageSize": {
-        "width": 1000,
-        "height": 1038
-      },
-      "file": "en-3.png",
-      "sha256": "3ad6a2c85c13ae5f9237697280ac9c59354021f2c6d6a8653b4eb51f53ea7caa"
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": ".stage-map",
+          "title": "Stage map",
+          "text": "Explore the stage route and installed notes.",
+          "box": {
+            "x": 1.1111111111111112,
+            "y": 10.759652752266971,
+            "width": 72.36111111111111,
+            "height": 87.85599659712689
+          }
+        },
+        {
+          "selector": ".layer-card",
+          "title": "Map layers",
+          "text": "Choose the route, notes and terrain layers to display.",
+          "box": {
+            "x": 1.9444444444444444,
+            "y": 38.77728582200653,
+            "width": 18.75,
+            "height": 53.20856131938671
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "map-light.png",
+          "sha256": "632cc741492617e08df29e6a6785fa81cbd8a9e98ff0c883d365690b101925c2",
+          "imageSize": {
+            "width": 2880,
+            "height": 1616
+          }
+        },
+        "dark": {
+          "file": "map-dark.png",
+          "sha256": "c585c8822d74ac59c08b236021f2b8e624f16708cb62cfab08ee6e75b0b1305d",
+          "imageSize": {
+            "width": 2880,
+            "height": 1616
+          }
+        }
+      }
     },
     {
-      "step": 3,
-      "language": "de",
-      "driver": "site_showcase",
-      "stop": "map",
+      "schema": 3,
+      "id": "telemetry",
+      "source": "real",
+      "imagery": "configured",
       "coaching": false,
-      "source": "authored",
-      "imagery": "off",
       "viewport": {
-        "width": 1000,
-        "height": 1000
+        "width": 1440,
+        "height": 900
       },
-      "imageSize": {
-        "width": 1000,
-        "height": 1038
-      },
-      "file": "de-3.png",
-      "sha256": "e669b9ae7ad6a4f92527d5cbeab99def123a5e56d2b1c50a745b752d2ed0bd8a"
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": "#telemetry-map",
+          "title": "On the stage",
+          "text": "Follow the recorded drive beside the map.",
+          "box": {
+            "x": 0.8333333333333334,
+            "y": 11.397569444444445,
+            "width": 31.465928819444443,
+            "height": 87.71354166666667
+          }
+        },
+        {
+          "selector": "#telemetry-charts",
+          "title": "Recorded channels",
+          "text": "Read speed and pedals on the same distance axis.",
+          "box": {
+            "x": 33.132595486111114,
+            "y": 11.397569444444445,
+            "width": 66.03407118055556,
+            "height": 87.71354166666667
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "telemetry-light.png",
+          "sha256": "7962c02a6384e4b4b78da996565ca493e4fa757e69c2861195007b05e7444efb",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        },
+        "dark": {
+          "file": "telemetry-dark.png",
+          "sha256": "abfc0c06467ce9f2492232de87f99569e6067ab88dd76a3476bed72e53165b3b",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        }
+      }
     },
     {
-      "step": 4,
-      "language": "en",
-      "driver": "site_showcase",
-      "stop": "telemetry",
+      "schema": 3,
+      "id": "cars",
+      "source": "real",
+      "imagery": "configured",
       "coaching": false,
-      "source": "authored",
-      "imagery": "off",
       "viewport": {
-        "width": 1120,
-        "height": 1000
+        "width": 1440,
+        "height": 900
       },
-      "imageSize": {
-        "width": 1120,
-        "height": 1000
-      },
-      "file": "en-4.png",
-      "sha256": "bce58d7729ee6a3ec872e3ecf465d0b1b4f7637df6c4e20589baa6f72838b7f6"
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": "[data-car-install] h1",
+          "title": "Your car",
+          "text": "Open the car you drive most that has installed setups.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 5.333333333333333,
+            "width": 61.666666666666664,
+            "height": 4.90625
+          }
+        },
+        {
+          "selector": "[data-car-install] .facts",
+          "title": "Technical facts",
+          "text": "Read the car information available from your install.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 23.588541666666668,
+            "width": 31.42795138888889,
+            "height": 30.697916666666668
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "cars-light.png",
+          "sha256": "0a7f931ac965b64b83b17dd5f77ea99697b29f54b7d1e254626e080129f4dd01",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        },
+        "dark": {
+          "file": "cars-dark.png",
+          "sha256": "a96722ffbd28e9726f07f4e581b55b836a9f3088dc96f259dbfeb2a8ab666876",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        }
+      }
     },
     {
-      "step": 4,
-      "language": "de",
-      "driver": "site_showcase",
-      "stop": "telemetry",
+      "schema": 3,
+      "id": "setups",
+      "source": "real",
+      "imagery": "configured",
       "coaching": false,
-      "source": "authored",
-      "imagery": "off",
       "viewport": {
-        "width": 1120,
-        "height": 1000
+        "width": 1440,
+        "height": 900
       },
-      "imageSize": {
-        "width": 1120,
-        "height": 1000
-      },
-      "file": "de-4.png",
-      "sha256": "5c98fe7804f15c692fb50f9ad82f86c1b7adad0719f8a37675ed8062316e9f96"
-    },
-    {
-      "step": 5,
-      "language": "en",
-      "driver": "site_showcase",
-      "stop": "setup",
-      "coaching": false,
-      "source": "authored",
-      "imagery": "off",
-      "viewport": {
-        "width": 1000,
-        "height": 1400
-      },
-      "imageSize": {
-        "width": 1000,
-        "height": 1400
-      },
-      "file": "en-5.png",
-      "sha256": "c534583ad0c6648822eb48fcfa39c78ea0866900792208194f7d5fa4d7bdb65d"
-    },
-    {
-      "step": 5,
-      "language": "de",
-      "driver": "site_showcase",
-      "stop": "setup",
-      "coaching": false,
-      "source": "authored",
-      "imagery": "off",
-      "viewport": {
-        "width": 1000,
-        "height": 1400
-      },
-      "imageSize": {
-        "width": 1000,
-        "height": 1400
-      },
-      "file": "de-5.png",
-      "sha256": "6ecf2095d0b200778f459325368e47503523dbf3eb3195a8d05147d7e7733101"
-    },
-    {
-      "step": 6,
-      "language": "en",
-      "driver": "site_showcase",
-      "stop": "car",
-      "coaching": false,
-      "source": "authored",
-      "imagery": "off",
-      "viewport": {
-        "width": 1000,
-        "height": 1400
-      },
-      "imageSize": {
-        "width": 1000,
-        "height": 1410
-      },
-      "file": "en-6.png",
-      "sha256": "b5a8915eb103d23b75a30938a1df053c7df645fdc298c5346a85389892b2eb6b"
-    },
-    {
-      "step": 6,
-      "language": "de",
-      "driver": "site_showcase",
-      "stop": "car",
-      "coaching": false,
-      "source": "authored",
-      "imagery": "off",
-      "viewport": {
-        "width": 1000,
-        "height": 1400
-      },
-      "imageSize": {
-        "width": 1000,
-        "height": 1410
-      },
-      "file": "de-6.png",
-      "sha256": "8599a8275d29f92fd445a1da4b35c24ed379aa9b2e95fa462c36ab1d1cc180c2"
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": "[data-setup-drawing]",
+          "title": "Setup overview",
+          "text": "See which parts of the car each setting group affects.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 19.96096268175632,
+            "width": 30.555555555555557,
+            "height": 74.53799871069408
+          }
+        },
+        {
+          "selector": "[role=\"tablist\"]",
+          "title": "Setting groups",
+          "text": "Inspect the available setup groups.",
+          "box": {
+            "x": 35.55555555555556,
+            "y": 19.96096268175632,
+            "width": 61.111111111111114,
+            "height": 4.519733543442447
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "setups-light.png",
+          "sha256": "c029c6bd0c13e06fd0d255e733b9bf607b83d73f79e134e4fc0be3a034cb96b4",
+          "imageSize": {
+            "width": 2880,
+            "height": 1744
+          }
+        },
+        "dark": {
+          "file": "setups-dark.png",
+          "sha256": "e331f9b316991d63fedbdedb1b7281a59bba5d4aea6b26821880edef9ec143de",
+          "imageSize": {
+            "width": 2880,
+            "height": 1744
+          }
+        }
+      }
     }
   ]
 }
