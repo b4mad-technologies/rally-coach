@@ -1,4 +1,4 @@
-// Ephemeral theme and per-figure selection; no storage or network.
+// Only an explicit day/night choice is stored locally; no network.
 const button=document.querySelector('#theme');
 const system=matchMedia('(prefers-color-scheme: dark)');
 const sync=()=>{
@@ -8,7 +8,12 @@ const sync=()=>{
   // overrides its source media in the same way that data-theme overrides tokens.
   document.querySelectorAll('[data-theme-source]').forEach(source=>source.media=dark?'all':'not all');
 };
-button.addEventListener('click',()=>{document.documentElement.dataset.theme=button.getAttribute('aria-pressed')==='true'?'light':'dark';sync();});
+button.addEventListener('click',()=>{
+  const theme=button.getAttribute('aria-pressed')==='true'?'light':'dark';
+  try {localStorage.setItem('theme',theme);document.documentElement.dataset.theme=theme;}
+  catch {delete document.documentElement.dataset.theme;}
+  sync();
+});
 system.addEventListener('change',sync);sync();
 for(const figure of document.querySelectorAll('[data-hotspots]')) {
   const spots=[...figure.querySelectorAll('.hotspot')];

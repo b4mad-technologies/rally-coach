@@ -296,7 +296,7 @@ h3 {
 /* Plain paper around the app captures; their own notebook grid is in the PNG. */
 body { background-image:none; }
 .book { display:grid; grid-template-columns:52px minmax(0,1fr); min-height:100vh; }
-.spiral { display:flex; flex-direction:column; justify-content:space-around; align-items:center; gap:38px; padding:32px 0; border-right:2px solid var(--rule); background:var(--paper); }
+.spiral { display:flex; flex-direction:column; justify-content:space-around; align-items:center; padding:32px 0; border-right:2px solid var(--rule); background:var(--paper); }
 .spiral span { width:24px; height:9px; border:2px solid var(--rule); border-radius:6px; }
 .sheet { min-width:0; max-width:1360px; width:100%; margin-inline:auto; }
 header { display:flex; flex-wrap:wrap; align-items:center; gap:18px 24px; padding:22px 30px; border-bottom:2px solid var(--rule); background:var(--paper); }
@@ -339,6 +339,18 @@ summary { cursor:pointer; font-weight:700; }
 .hint-list li[data-active=true] { border-color:var(--ink-muted); }
 .hint-list strong { display:block; color:var(--ink); margin-bottom:4px; }
 .cycle-control { font-size:.8rem; padding:2px 6px; margin-top:4px; }
+@media(min-width:761px) {
+  /* One public capture uses the space left after the actual header and copy.
+     Container units bound both dimensions; hotspots retain the image's ratio. */
+  .sheet:has(figure) { height:100dvh; display:flex; flex-direction:column; }
+  .sheet:has(figure) header, .sheet:has(figure) footer, .page-heading, .neighbors { flex-shrink:0; }
+  .sheet:has(figure) main { flex:1; min-height:min-content; container-type:inline-size; display:flex; flex-direction:column; }
+  figure { flex:1; min-height:calc(60cqw / var(--shot-ratio)); container-type:size; display:flex; gap:24px; margin:0; }
+  .shot-image { flex:none; width:min(72cqw,calc(100cqh * var(--shot-ratio))); min-width:60cqw; aspect-ratio:var(--shot-ratio); }
+  figcaption { flex:1; }
+  .sheet:has(figure) .neighbors { margin-top:16px; padding-block:14px; }
+  .sheet:has(figure) footer { padding-block:16px; }
+}
 @media(max-width:760px) { figure { grid-template-columns:minmax(0,1fr); gap:16px; } .hotspot,.cycle-control { display:none; } .hint-list li { border:0; padding:0; margin-bottom:14px; } }
 .project-credits { max-width:950px; margin:32px 0; }
 .project-credits>div { display:grid; grid-template-columns:180px minmax(0,1fr); border-top:1px solid var(--rule-soft); padding:16px 0; gap:20px; }

@@ -1,32 +1,43 @@
 {
-  "schema": 1,
-  "approver": "Marcel",
-  "date": "2026-11-06",
-  "source": "real",
-  "files": {
-    "cars-dark.png": "a96722ffbd28e9726f07f4e581b55b836a9f3088dc96f259dbfeb2a8ab666876",
-    "cars-light.png": "0a7f931ac965b64b83b17dd5f77ea99697b29f54b7d1e254626e080129f4dd01",
-    "cars.json": "1e5a3e02d854070f657a9aed1a639b003e552d7632a155eb2346e7b91c8af5e1",
-    "home-dark.png": "94c12aad1485f98c2c32f0c2d0999b515b79f6ba1b60a77ca47aba0e471c5957",
-    "home-light.png": "9b28220ad82914d46e2818c8499f4ec31b907683ff5f03f87be4c924f1f9ba06",
-    "home.json": "e351bfbbf1abc02010af894eba65ade93315f5bb548df71afb25165f47dcdb6d",
-    "map-dark.png": "c585c8822d74ac59c08b236021f2b8e624f16708cb62cfab08ee6e75b0b1305d",
-    "map-light.png": "632cc741492617e08df29e6a6785fa81cbd8a9e98ff0c883d365690b101925c2",
-    "map.json": "b4fe57447d07a3e8b26bcef11849d4a2055f3e8b15ec71c2ee9c3df8f2d2d4a1",
-    "rallies-dark.png": "f0a0765ea1970b0a787ad583d7e4c8d289dac8500a266cc1c5903fdfd1d4c79d",
-    "rallies-light.png": "e4496592f06b88902393e26385d2c4b403472ede3a27a844d0662225c32aad76",
-    "rallies.json": "41bcd9af39b3c8a6567499884a30f0731f71bee11c134f94ca964ec2371f5fdb",
-    "runs-dark.png": "5bbd07a334485469e6a5b1bbe7b977ab70da5dd2a44d72ed99a826c789336cad",
-    "runs-light.png": "e6f64eb523336ce79073ccecc538348b9a9344e12d962b0e60fceac731259e66",
-    "runs.json": "6559e1140d53eca521dc77197e5e5458286a2a964fbc043e27222cb13962d90e",
-    "setups-dark.png": "e331f9b316991d63fedbdedb1b7281a59bba5d4aea6b26821880edef9ec143de",
-    "setups-light.png": "c029c6bd0c13e06fd0d255e733b9bf607b83d73f79e134e4fc0be3a034cb96b4",
-    "setups.json": "32c07ef4699062355891a474be706c661a717f6fd906fc46612dda024bba478f",
-    "stages-dark.png": "12dcf425334cccefcdeaf7b6355b1ac2d40c44ee2607e20730b607babef76c55",
-    "stages-light.png": "b202ee8814dd3199770a86fe74995df0c970289294e6926360325958f01bbf68",
-    "stages.json": "fda93e66f456286071faa58cbb7e6ebbdc0a751a1346bf3cb0f5336e41c71c84",
-    "telemetry-dark.png": "abfc0c06467ce9f2492232de87f99569e6067ab88dd76a3476bed72e53165b3b",
-    "telemetry-light.png": "7962c02a6384e4b4b78da996565ca493e4fa757e69c2861195007b05e7444efb",
-    "telemetry.json": "6f438fdc653d7867e2e9acec693f254aec15d627245dbcedf035f82b794864d5"
-  }
+  "schema": 2,
+  "approvals": [
+    {
+      "approver": "Marcel",
+      "date": "2026-11-06",
+      "source": "real",
+      "files": {
+        "cars-dark.png": "a96722ffbd28e9726f07f4e581b55b836a9f3088dc96f259dbfeb2a8ab666876",
+        "cars-light.png": "0a7f931ac965b64b83b17dd5f77ea99697b29f54b7d1e254626e080129f4dd01",
+        "cars.json": "1e5a3e02d854070f657a9aed1a639b003e552d7632a155eb2346e7b91c8af5e1",
+        "home-dark.png": "94c12aad1485f98c2c32f0c2d0999b515b79f6ba1b60a77ca47aba0e471c5957",
+        "home-light.png": "9b28220ad82914d46e2818c8499f4ec31b907683ff5f03f87be4c924f1f9ba06",
+        "home.json": "e351bfbbf1abc02010af894eba65ade93315f5bb548df71afb25165f47dcdb6d",
+        "map-dark.png": "c585c8822d74ac59c08b236021f2b8e624f16708cb62cfab08ee6e75b0b1305d",
+        "map-light.png": "632cc741492617e08df29e6a6785fa81cbd8a9e98ff0c883d365690b101925c2",
+        "map.json": "b4fe57447d07a3e8b26bcef11849d4a2055f3e8b15ec71c2ee9c3df8f2d2d4a1",
+        "rallies-dark.png": "f0a0765ea1970b0a787ad583d7e4c8d289dac8500a266cc1c5903fdfd1d4c79d",
+        "rallies-light.png": "e4496592f06b88902393e26385d2c4b403472ede3a27a844d0662225c32aad76",
+        "rallies.json": "41bcd9af39b3c8a6567499884a30f0731f71bee11c134f94ca964ec2371f5fdb",
+        "runs-dark.png": "5bbd07a334485469e6a5b1bbe7b977ab70da5dd2a44d72ed99a826c789336cad",
+        "runs-light.png": "e6f64eb523336ce79073ccecc538348b9a9344e12d962b0e60fceac731259e66",
+        "runs.json": "6559e1140d53eca521dc77197e5e5458286a2a964fbc043e27222cb13962d90e",
+        "setups-dark.png": "e331f9b316991d63fedbdedb1b7281a59bba5d4aea6b26821880edef9ec143de",
+        "setups-light.png": "c029c6bd0c13e06fd0d255e733b9bf607b83d73f79e134e4fc0be3a034cb96b4",
+        "setups.json": "32c07ef4699062355891a474be706c661a717f6fd906fc46612dda024bba478f",
+        "stages-dark.png": "12dcf425334cccefcdeaf7b6355b1ac2d40c44ee2607e20730b607babef76c55",
+        "stages-light.png": "b202ee8814dd3199770a86fe74995df0c970289294e6926360325958f01bbf68",
+        "stages.json": "fda93e66f456286071faa58cbb7e6ebbdc0a751a1346bf3cb0f5336e41c71c84"
+      }
+    },
+    {
+      "approver": "Marcel",
+      "date": "2026-11-07",
+      "source": "real",
+      "files": {
+        "telemetry-dark.png": "453406e0c2a8b39282fd5f922f66821244a507b87c1857ad1317b5069a5dcdab",
+        "telemetry-light.png": "7d190aefcd184e2554e14270ba3d73d4ca2008ec90bd95931c9db1c4c9ca4176",
+        "telemetry.json": "07bf67b970aaf9ca3de086d3b292744cfe048d092bd096dbe993f855c4fa5220"
+      }
+    }
+  ]
 }
