@@ -1,0 +1,450 @@
+{
+  "schema": 3,
+  "source": "real",
+  "approval": "approval.json",
+  "records": [
+    {
+      "schema": 3,
+      "id": "home",
+      "source": "real",
+      "imagery": "configured",
+      "coaching": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": ".stage-map",
+          "title": "Route and notes",
+          "text": "See the stage route and installed pacenotes together.",
+          "box": {
+            "x": 1.1111111111111112,
+            "y": 10.759652752266971,
+            "width": 72.36111111111111,
+            "height": 87.85599659712689
+          }
+        },
+        {
+          "selector": "[data-personal-notes]",
+          "title": "Your pacenotes",
+          "text": "Inspect the active installed note profile.",
+          "box": {
+            "x": 74.58333333333333,
+            "y": 14.80829837010112,
+            "width": 24.305555555555557,
+            "height": 10.848591481216527
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "home-light.png",
+          "sha256": "9b28220ad82914d46e2818c8499f4ec31b907683ff5f03f87be4c924f1f9ba06",
+          "imageSize": {
+            "width": 2880,
+            "height": 1616
+          }
+        },
+        "dark": {
+          "file": "home-dark.png",
+          "sha256": "94c12aad1485f98c2c32f0c2d0999b515b79f6ba1b60a77ca47aba0e471c5957",
+          "imageSize": {
+            "width": 2880,
+            "height": 1616
+          }
+        }
+      }
+    },
+    {
+      "schema": 3,
+      "id": "runs",
+      "source": "real",
+      "imagery": "configured",
+      "coaching": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": "input[role=\"combobox\"]",
+          "title": "Find a run",
+          "text": "Search your local driving history.",
+          "box": {
+            "x": 4.305555555555555,
+            "y": 19.11111111111111,
+            "width": 90.27777777777777,
+            "height": 4.194444444444445
+          }
+        },
+        {
+          "selector": "table.runs thead",
+          "title": "Every attempt",
+          "text": "Read stage, car, finish time and recording availability together.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 31.56597222222222,
+            "width": 92.22222222222223,
+            "height": 5.291666666666667
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "runs-light.png",
+          "sha256": "e6f64eb523336ce79073ccecc538348b9a9344e12d962b0e60fceac731259e66",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        },
+        "dark": {
+          "file": "runs-dark.png",
+          "sha256": "5bbd07a334485469e6a5b1bbe7b977ab70da5dd2a44d72ed99a826c789336cad",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        }
+      }
+    },
+    {
+      "schema": 3,
+      "id": "rallies",
+      "source": "real",
+      "imagery": "configured",
+      "coaching": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": "table.passes thead",
+          "title": "Stage order",
+          "text": "Read the stages and finish times in each pass.",
+          "box": {
+            "x": 13.333333333333334,
+            "y": 24.81077134054035,
+            "width": 73.33333333333333,
+            "height": 5.428413685016652
+          }
+        },
+        {
+          "selector": "[data-rally-pass] [data-rally-run]",
+          "title": "Rally passes",
+          "text": "Keep the runs from each pass together.",
+          "box": {
+            "x": 13.333333333333334,
+            "y": 45.27418119645942,
+            "width": 73.33333333333333,
+            "height": 7.943151258259275
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "rallies-light.png",
+          "sha256": "e4496592f06b88902393e26385d2c4b403472ede3a27a844d0662225c32aad76",
+          "imageSize": {
+            "width": 2880,
+            "height": 1754
+          }
+        },
+        "dark": {
+          "file": "rallies-dark.png",
+          "sha256": "f0a0765ea1970b0a787ad583d7e4c8d289dac8500a266cc1c5903fdfd1d4c79d",
+          "imageSize": {
+            "width": 2880,
+            "height": 1754
+          }
+        }
+      }
+    },
+    {
+      "schema": 3,
+      "id": "stages",
+      "source": "real",
+      "imagery": "configured",
+      "coaching": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": ".stage-header",
+          "title": "Stage facts",
+          "text": "Read the length and surface from your install.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 5.333333333333333,
+            "width": 61.666666666666664,
+            "height": 11.61111111111111
+          }
+        },
+        {
+          "selector": "[data-car-best]",
+          "title": "Your finishes",
+          "text": "See your recorded best finishes by car.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 31.92534722222222,
+            "width": 61.666666666666664,
+            "height": 5.347222222222222
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "stages-light.png",
+          "sha256": "b202ee8814dd3199770a86fe74995df0c970289294e6926360325958f01bbf68",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        },
+        "dark": {
+          "file": "stages-dark.png",
+          "sha256": "12dcf425334cccefcdeaf7b6355b1ac2d40c44ee2607e20730b607babef76c55",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        }
+      }
+    },
+    {
+      "schema": 3,
+      "id": "map",
+      "source": "real",
+      "imagery": "configured",
+      "coaching": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": ".stage-map",
+          "title": "Stage map",
+          "text": "Explore the stage route and installed notes.",
+          "box": {
+            "x": 1.1111111111111112,
+            "y": 10.759652752266971,
+            "width": 72.36111111111111,
+            "height": 87.85599659712689
+          }
+        },
+        {
+          "selector": ".layer-card",
+          "title": "Map layers",
+          "text": "Choose the route, notes and terrain layers to display.",
+          "box": {
+            "x": 1.9444444444444444,
+            "y": 38.77728582200653,
+            "width": 18.75,
+            "height": 53.20856131938671
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "map-light.png",
+          "sha256": "632cc741492617e08df29e6a6785fa81cbd8a9e98ff0c883d365690b101925c2",
+          "imageSize": {
+            "width": 2880,
+            "height": 1616
+          }
+        },
+        "dark": {
+          "file": "map-dark.png",
+          "sha256": "c585c8822d74ac59c08b236021f2b8e624f16708cb62cfab08ee6e75b0b1305d",
+          "imageSize": {
+            "width": 2880,
+            "height": 1616
+          }
+        }
+      }
+    },
+    {
+      "schema": 3,
+      "id": "telemetry",
+      "source": "real",
+      "imagery": "configured",
+      "coaching": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": "#telemetry-map",
+          "title": "First hairpin",
+          "text": "See the driven line, pacenotes and collision footprints.",
+          "box": {
+            "x": 0.8333333333333334,
+            "y": 11.397569444444445,
+            "width": 31.465928819444443,
+            "height": 87.71354166666667
+          }
+        },
+        {
+          "selector": "#telemetry-charts",
+          "title": "Speed and steering",
+          "text": "Read the recorded channels through the hairpin.",
+          "box": {
+            "x": 33.132595486111114,
+            "y": 11.397569444444445,
+            "width": 66.03407118055556,
+            "height": 87.71354166666667
+          }
+        },
+        {
+          "selector": ".distance-overview",
+          "title": "Distance overview",
+          "text": "Place this hairpin window within the whole recording.",
+          "box": {
+            "x": 33.576388888888886,
+            "y": 91.13715277777777,
+            "width": 65.59027777777777,
+            "height": 7.973958333333333
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "telemetry-light.png",
+          "sha256": "7d190aefcd184e2554e14270ba3d73d4ca2008ec90bd95931c9db1c4c9ca4176",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        },
+        "dark": {
+          "file": "telemetry-dark.png",
+          "sha256": "453406e0c2a8b39282fd5f922f66821244a507b87c1857ad1317b5069a5dcdab",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        }
+      }
+    },
+    {
+      "schema": 3,
+      "id": "cars",
+      "source": "real",
+      "imagery": "configured",
+      "coaching": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": "[data-car-install] h1",
+          "title": "Your car",
+          "text": "Open the car you drive most that has installed setups.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 5.333333333333333,
+            "width": 61.666666666666664,
+            "height": 4.90625
+          }
+        },
+        {
+          "selector": "[data-car-install] .facts",
+          "title": "Technical facts",
+          "text": "Read the car information available from your install.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 23.588541666666668,
+            "width": 31.42795138888889,
+            "height": 30.697916666666668
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "cars-light.png",
+          "sha256": "0a7f931ac965b64b83b17dd5f77ea99697b29f54b7d1e254626e080129f4dd01",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        },
+        "dark": {
+          "file": "cars-dark.png",
+          "sha256": "a96722ffbd28e9726f07f4e581b55b836a9f3088dc96f259dbfeb2a8ab666876",
+          "imageSize": {
+            "width": 2880,
+            "height": 1800
+          }
+        }
+      }
+    },
+    {
+      "schema": 3,
+      "id": "setups",
+      "source": "real",
+      "imagery": "configured",
+      "coaching": false,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "deviceScaleFactor": 2,
+      "hotspots": [
+        {
+          "selector": "[data-setup-drawing]",
+          "title": "Setup overview",
+          "text": "See which parts of the car each setting group affects.",
+          "box": {
+            "x": 3.3333333333333335,
+            "y": 19.96096268175632,
+            "width": 30.555555555555557,
+            "height": 74.53799871069408
+          }
+        },
+        {
+          "selector": "[role=\"tablist\"]",
+          "title": "Setting groups",
+          "text": "Inspect the available setup groups.",
+          "box": {
+            "x": 35.55555555555556,
+            "y": 19.96096268175632,
+            "width": 61.111111111111114,
+            "height": 4.519733543442447
+          }
+        }
+      ],
+      "images": {
+        "light": {
+          "file": "setups-light.png",
+          "sha256": "c029c6bd0c13e06fd0d255e733b9bf607b83d73f79e134e4fc0be3a034cb96b4",
+          "imageSize": {
+            "width": 2880,
+            "height": 1744
+          }
+        },
+        "dark": {
+          "file": "setups-dark.png",
+          "sha256": "e331f9b316991d63fedbdedb1b7281a59bba5d4aea6b26821880edef9ec143de",
+          "imageSize": {
+            "width": 2880,
+            "height": 1744
+          }
+        }
+      }
+    }
+  ]
+}

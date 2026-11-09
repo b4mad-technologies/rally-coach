@@ -1,0 +1,54 @@
+{
+  "schema": 3,
+  "id": "setups",
+  "source": "real",
+  "imagery": "configured",
+  "coaching": false,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 2,
+  "hotspots": [
+    {
+      "selector": "[data-setup-drawing]",
+      "title": "Setup overview",
+      "text": "See which parts of the car each setting group affects.",
+      "box": {
+        "x": 3.3333333333333335,
+        "y": 19.96096268175632,
+        "width": 30.555555555555557,
+        "height": 74.53799871069408
+      }
+    },
+    {
+      "selector": "[role=\"tablist\"]",
+      "title": "Setting groups",
+      "text": "Inspect the available setup groups.",
+      "box": {
+        "x": 35.55555555555556,
+        "y": 19.96096268175632,
+        "width": 61.111111111111114,
+        "height": 4.519733543442447
+      }
+    }
+  ],
+  "images": {
+    "light": {
+      "file": "setups-light.png",
+      "sha256": "c029c6bd0c13e06fd0d255e733b9bf607b83d73f79e134e4fc0be3a034cb96b4",
+      "imageSize": {
+        "width": 2880,
+        "height": 1744
+      }
+    },
+    "dark": {
+      "file": "setups-dark.png",
+      "sha256": "e331f9b316991d63fedbdedb1b7281a59bba5d4aea6b26821880edef9ec143de",
+      "imageSize": {
+        "width": 2880,
+        "height": 1744
+      }
+    }
+  }
+}
