@@ -1,6 +1,6 @@
 # Rally Coach — public alpha
 
-[Download Rally Coach and take the guided tour](https://b4mad-technologies.github.io/rally-coach/).
+[Download Rally Coach and take the guided tour](https://rally-coach.b4mad.technology/).
 [Release downloads and SHA256SUMS](https://github.com/b4mad-technologies/rally-coach/releases/latest).
 
 This repository hosts release binaries, the website and community issues. It does
