@@ -1,44 +1,45 @@
-// Only an explicit day/night choice is stored locally; no network.
+// Only an explicit day/night choice is stored locally; no network or timers.
 const button=document.querySelector('#theme');
 const system=matchMedia('(prefers-color-scheme: dark)');
 const sync=()=>{
-  const dark=document.documentElement.dataset.theme ? document.documentElement.dataset.theme==='dark' : system.matches;
-  button.setAttribute('aria-pressed',String(dark));
-  // Picture provides system-theme selection without JS; an explicit toggle
-  // overrides its source media in the same way that data-theme overrides tokens.
-  document.querySelectorAll('[data-theme-source]').forEach(source=>source.media=dark?'all':'not all');
+ const dark=document.documentElement.dataset.theme ? document.documentElement.dataset.theme==='dark' : system.matches;
+ button.setAttribute('aria-pressed',String(dark));
+ button.dataset.mode=dark?'night':'day';
+ const label=dark?'Night mode (switch to day)':'Day mode (switch to night)';
+ button.setAttribute('aria-label',label);button.title=label;
 };
 button.addEventListener('click',()=>{
-  const theme=button.getAttribute('aria-pressed')==='true'?'light':'dark';
-  try {localStorage.setItem('theme',theme);document.documentElement.dataset.theme=theme;}
-  catch {delete document.documentElement.dataset.theme;}
-  sync();
+ const theme=button.getAttribute('aria-pressed')==='true'?'light':'dark';
+ try {localStorage.setItem('theme',theme);document.documentElement.dataset.theme=theme;}
+ catch {delete document.documentElement.dataset.theme;}
+ sync();
 });
 system.addEventListener('change',sync);sync();
-for(const figure of document.querySelectorAll('[data-hotspots]')) {
-  const spots=[...figure.querySelectorAll('.hotspot')];
-  const hints=[...figure.querySelectorAll('.hint-list li')];
-  let active=0,pointer=false,focused=false,playing=true;
-  if(!spots.length)continue;
-  const select=index=>{
-    active=index;
-    spots.forEach((spot,i)=>spot.setAttribute('aria-pressed',String(i===index)));
-    hints.forEach((hint,i)=>hint.dataset.active=String(i===index));
-  };
-  spots.forEach((spot,index)=>{
-    spot.addEventListener('pointerenter',()=>select(index));
-    spot.addEventListener('focus',()=>select(index));
-    spot.addEventListener('click',()=>select(index));
-  });
-  hints.forEach((hint,index)=>hint.addEventListener('pointerenter',()=>select(index)));
-  figure.addEventListener('pointerenter',()=>{pointer=true;});
-  figure.addEventListener('pointerleave',()=>{pointer=false;});
-  figure.addEventListener('focusin',()=>{focused=true;});
-  figure.addEventListener('focusout',event=>{focused=figure.contains(event.relatedTarget);});
-  // A persistent pause complements hover/focus holds for reading at one's own pace.
-  const pause=document.createElement('button');pause.type='button';pause.className='cycle-control';pause.textContent='Pause hints';pause.setAttribute('aria-pressed','false');
-  pause.addEventListener('click',()=>{playing=!playing;pause.textContent=playing?'Pause hints':'Resume hints';pause.setAttribute('aria-pressed',String(!playing));});
-  figure.querySelector('figcaption').append(pause);
-  select(0);
-  setInterval(()=>{if(playing&&!pointer&&!focused&&!document.hidden)select((active+1)%spots.length);},4000);
-}
+
+// Help occupies the same reserved line for pointer, keyboard and touch.
+// An empty idle line avoids adding another repeated label to the roadbook.
+document.querySelectorAll('.features li').forEach(row=>{
+ const line=row.querySelector('.chip-help');
+ const show=control=>{
+  row.querySelectorAll('.feature-chip').forEach(chip=>chip.removeAttribute('data-active'));
+  if(control)control.dataset.active='true';
+  line.textContent=control?document.getElementById(control.getAttribute('aria-describedby')).textContent:'';
+ };
+ row.querySelectorAll('.feature-chip').forEach(control=>{
+  control.addEventListener('pointerenter',event=>{if(event.pointerType!=='touch')show(control);});
+  control.addEventListener('pointerleave',event=>{if(event.pointerType!=='touch')show(null);});
+  control.addEventListener('focus',()=>show(control));
+  control.addEventListener('blur',()=>show(null));
+  control.addEventListener('click',()=>show(control));
+ });
+ row.addEventListener('pointerleave',()=>show(null));
+});
+// Touch selections clear when the visitor moves outside their row.
+document.addEventListener('pointerdown',event=>{
+ document.querySelectorAll('.features li').forEach(row=>{
+  if(!row.contains(event.target)) {
+   row.querySelector('.chip-help').textContent='';
+   row.querySelectorAll('[data-active]').forEach(chip=>chip.removeAttribute('data-active'));
+  }
+ });
+});
