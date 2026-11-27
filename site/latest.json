@@ -1,8 +1,8 @@
 {
   "schema": "rally-coach/latest/1",
-  "version": "1.0.1",
-  "tag": "v1.0.1",
-  "published_at": "2026-11-27T01:34:27.689158Z",
-  "url": "https://github.com/b4mad-technologies/rally-coach/releases/tag/v1.0.1",
-  "notes_markdown": "- Open maps for all published stages, regardless of your installed stage version."
+  "version": "1.0.2",
+  "tag": "v1.0.2",
+  "published_at": "2026-11-27T13:34:59.886424Z",
+  "url": "https://github.com/b4mad-technologies/rally-coach/releases/tag/v1.0.2",
+  "notes_markdown": "- Follow your car more smoothly as you move through the telemetry charts and elevation profile.\n- See clearer notices when a stage map is unavailable.\n- Compare setups without false differences caused by rounding."
 }
